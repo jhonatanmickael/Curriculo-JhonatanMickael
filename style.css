@@ -104,36 +104,16 @@ li {
     font-weight: bold;
 }
 
-/* --- AJUSTES PARA CELULAR (MOBILE) --- */
 @media (max-width: 600px) {
-    body {
-        padding: 10px; /* Reduz a folga externa */
-    }
-    .container {
-        padding: 20px; /* Reduz o "respiro" interno de 50px para 20px */
-    }
-    header {
-        flex-direction: column-reverse; /* Foto em cima, texto embaixo */
-        text-align: center;
-        align-items: center;
-    }
-    .header-photo {
-        margin-left: 0;
-        margin-bottom: 15px;
-    }
-    .profile-img {
-        width: 110px; /* Foto levemente menor no celular */
-        height: 110px;
-    }
-    h1 {
-        font-size: 1.8em; /* Título menor para não quebrar linha estranho */
-    }
-    .skills-container {
-        grid-template-columns: 1fr; /* Habilidades ficam uma abaixo da outra */
-    }
+    body { padding: 10px; }
+    .container { padding: 20px; }
+    header { flex-direction: column-reverse; text-align: center; align-items: center; }
+    .header-photo { margin-left: 0; margin-bottom: 15px; }
+    .profile-img { width: 110px; height: 110px; }
+    h1 { font-size: 1.8em; }
+    .skills-container { grid-template-columns: 1fr; }
 }
 
-/* --- AJUSTES PARA IMPRESSÃO (PDF) --- */
 @media print {
     body { background: none; padding: 0; }
     .container { box-shadow: none; width: 100%; max-width: none; padding: 20px; }
